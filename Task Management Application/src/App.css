@@ -1,0 +1,156 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.task-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+}
+
+.task-card {
+  width: 100%;
+  max-width: 650px;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px #0f172a12;
+}
+
+.task-card h1 {
+  margin: 0;
+  color: #1d4ed8;
+  font-size: 30px;
+}
+
+.subtitle {
+  margin: 10px 0 24px;
+  color: #64748b;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+}
+
+.task-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.task-form button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.task-form button:hover {
+  background: #1d4ed8;
+}
+
+.task-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 24px 0 16px;
+  padding: 14px;
+  background: #eff6ff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.empty-message {
+  padding: 24px 0;
+  text-align: center;
+  color: #64748b;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.task-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.task-label input {
+  flex-shrink: 0;
+}
+
+.completed {
+  color: #94a3b8;
+  text-decoration: line-through;
+}
+
+.delete-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #fee2e2;
+  color: #b91c1c;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background: #fecaca;
+}
+
+@media (max-width: 480px) {
+  .task-container {
+    padding: 24px 12px;
+  }
+
+  .task-card {
+    padding: 20px;
+  }
+
+  .task-card h1 {
+    font-size: 25px;
+  }
+
+  .task-form {
+    flex-direction: column;
+  }
+
+  .task-form button {
+    width: 100%;
+  }
+
+  .task-summary {
+    font-size: 12px;
+  }
+}
